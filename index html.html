@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>>مسار تعلم HTML - من الصفرإلى الاحتراف </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body id="html-page">
+
+      <div class="container">
+
+        <!-- مقدمة الموقع -->
+        <header>
+            <h1>رحلتك لتعلم لغة HTML</h1>
+            <p>الدليل المبسط خطوة بخطوة لدخول عالم تطوير الويب بسهولة وبدون تعقيد</p>
+        </header>
+
+        <nav class="navbar">
+        <a href="index home.html" class="nav-btn">HOME</a>
+         <a href="index html.html" class="nav-btn" style="color: var(--html-color); border-color: var(--html-color);">HTHL</a>
+        <a href="index css.html" class="nav-btn">CSS</a>
+        <a href="index js.html"class="nav-btn">JavaScript</a>
+ </nav>
+ <!-- مربع البحث الذكي -->
+<div class="search-box">
+    <input type="text" id="search-input" placeholder="🔍 ابحث عن درس أو وسم معين...">
+</div>
+
+        <!-- بطاقة التعريف العامة -->
+        <div class="card" style="border-right-color: #e67e22;">
+            <h3>ما هي لغة HTML وما هي وظيفتها؟</h3>
+            <p>هي اختصار لـ <strong>HyperText Markup Language</strong>. لا تخف من الاسم المعقد! ببساطة هي اللغة المسؤولة عن وضع قطع البناء الأساسية لأي موقع تراه على الإنترنت.</p>
+            <div class="analogy">
+                <strong>💡 تشبيه بسيط:</strong> تخيل أنك تبني منزلاً؛ لغة HTML هي بمثابة (الخرسانة والطوب والأعمدة) قبل وضع الطلاء والأثاث. بدونها لا وجود للمنزل أصلاً!
+            </div>
+            <p>وظيفتها الأساسية هي إخبار متصفح الإنترنت (مثل كروم أو سفاري) بأن هذا المكان يحتوي على عنوان، وهنا توجد فقرة، وهنا صورة، ليقوم المتصفح بعرضها لك.</p>
+        </div>
+
+        <main>
+
+            <!-- الدرس الأول -->
+            <h2 class="lesson-title">الدرس الأول: هيكل الصفحة الأساسي (عظام الموقع)</h2>
+
+            <div class="card">
+                <h3>وسم الجذر <code>&lt;html&gt;</code></h3>
+                <p>هو الصندوق الأكبر على الإطلاق في صفحتك. كل سطر كود تكتبه يجب أن يكون بداخل هذا الوسم، لأنه يخبر المتصفح: "انتبه، هذا ملف ويب حقيقي".</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;html&gt;
+    <!-- كل محتوى موقعك بدون استثناء يكتب هنا في الداخل -->
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>وسم معلومات الصفحة الخلفية <code>&lt;head&gt;</code></h3>
+                <p>هذا الوسم يمثل "عقل ومخ" الصفحة. المعلومات المكتوبة بداخله لا يراها زوار الموقع، بل هي معلومات سرية وتوجيهية لمتصفح الإنترنت ولمحرك البحث جوجل لكي يفهم ما هو موقعك.</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;head&gt;
+    <!-- هنا توضع إعدادات الصفحة، مثل اللغة، والروابط الخارجية -->
+&lt;/head&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>وسم عنوان التبويب <code>&lt;title&gt;</code></h3>
+                <p>يُكتب دائماً داخل الـ <code>&lt;head&gt;</code>. وظيفته بسيطة جداً ولكنها مهمة: هو النص الذي يظهر في أعلى المتصفح على علامة التبويب (Tab) ليُعلم المستخدم باسم الصفحة الحالية.</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;title&gt;موقعي الشخصي - الصفحة الرئيسية&lt;/title&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>وسم جسم الصفحة المرئي <code>&lt;body&gt;</code></h3>
+                <p>هذا هو المسرح الحقيقي! أي شيء تكتبه داخل وسم الـ <code>&lt;body&gt;</code> سيظهر فوراً لزوار موقعك؛ سواء كانت نصوصاً، صوراً، أزراراً، أو فيديوهات.</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;body&gt;
+                <!-- أي شيء يكتب هنا سيظهر للزوار على الشاشة البيضاء -->
+&lt;/body&gt;</code></pre>
+            </div>
+
+
+            <!-- الدرس الثاني -->
+            <h2 class="lesson-title">الدرس الثاني: العناوين والفقرات (كتابة النصوص)</h2>
+
+            <div class="card">
+                <h3>وسوم العناوين من <code>&lt;h1&gt;</code> إلى <code>&lt;h6&gt;</code></h3>
+                <p>تُستخدم لكتابة العناوين حسب أهميتها وحجمها. وسم <code>&lt;h1&gt;</code> هو العنوان الأكبر والأهم (يُستخدم مرة واحدة غالباً لعنوان الصفحة الرئيسي)، وكلما زاد الرقم صغر حجم الخط، حتى نصل إلى <code>&lt;h6&gt;</code> وهو أصغر عنوان فرعي.</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;h1&gt;عنوان رئيسي كبير جداً&lt;/h1&gt;
+&lt;h3&gt;عنوان فرعي متوسط الحجم&lt;/h3&gt;
+&lt;h6&gt;عنوان فرعي صغير جداً&lt;/h6&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>وسم الفقرة النصية <code>&lt;p&gt;</code></h3>
+                <p>إذا كنت تريد كتابة كرتم عادٍ أو شرح أو مقال، فإنك تضعه داخل وسم الفقرة <code>&lt;p&gt;</code>. يتميز هذا الوسم بأن المتصفح يعطيه مسافة تلقائية من الأعلى والأسفل لتبدو القراءة مريحة.</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;p&gt;مرحباً بك في موقعي التعليمي، أتمنى لك رحلة ممتعة في تعلم البرمجة.&lt;/p&gt;</code></pre>
+            </div>
+
+
+            <!-- الدرس الثالث -->
+            <h2 class="lesson-title">الدرس الثالث: تنظيم البيانات (الجداول، القوائم والوسائط)</h2>
+
+            <div class="card">
+                <h3>وسم الجدول <code>&lt;table&gt;</code></h3>
+                <p>لإنشاء جدول منظم، نستخدم <code>&lt;table&gt;</code>، ونضع داخله وسوم فرعية: <code>&lt;tr&gt;</code> لإنشاء سطر جديد (Row)، وبداخل السطر نضع <code>&lt;td&gt;</code> لإنشاء مربع أو خلية بيانات (Cell).</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;الاسم&lt;/td&gt;
+        &lt;td&gt;الدرجة&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>وسوم القوائم (Lists)</h3>
+                <p>تُستخدم عندما تريد ترتيب عناصر في نقاط متتالية (مثل قائمة المهام). لدينا نوعان: قائمة نقطية غير مرتبة <code>&lt;ul&gt;</code>، وقائمة مرقمة 1، 2، 3 تسمى <code>&lt;ol&gt;</code>. وكل سطر بداخلهم يسمى <code>&lt;li&gt;</code>.</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;!-- قائمة نقطية غير مرتبة --&gt;
+&lt;ul&gt;
+    &lt;li&gt;تفاح&lt;/li&gt;
+    &lt;li&gt;موز&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- قائمة مرقمة مرتبة --&gt;
+&lt;ol&gt;
+    &lt;li&gt;الخطوة الأولى&lt;/li&gt;
+    &lt;li&gt;الخطوة الثانية&lt;/ol&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>تشغيل الصوت والفيديو <code>&lt;video&gt;</code> & <code>&lt;audio&gt;</code></h3>
+                <p>لم يعد تضمين الصوت والفيديو صعباً؛ نستخدم وسم الفيديو أو الصوت ونضع له مسار الملف الفعلي عبر <code>src</code>، وكلمة <code>controls</code> السحرية هي التي تظهر أزرار التشغيل والإيقاف والتحكم بالصوت للمستخدم.</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;video src="movie.mp4" controls&gt;الفيديو غير مدعوم&lt;/video&gt;
+&lt;audio src="song.mp3" controls&gt;الصوت غير مدعوم&lt;/audio&gt;</code></pre>
+            </div>
+
+
+            <!-- الدرس الرابع -->
+            <h2 class="lesson-title">الدرس الرابع: تنظيم أجزاء الموقع (الوسوم الهيكلية الحديثة)</h2>
+
+            <div class="card">
+                <h3>وسوم التقسيم الدلالي (Semantic Tags)</h3>
+                <p>المواقع الاحترافية تُقسّم شاشتها لقطع مفهومة. الـ <code>&lt;header&gt;</code> لقمة الموقع (الرأس)، الـ <code>&lt;nav&gt;</code> لأزرار التنقل والقائمة، الـ <code>&lt;main&gt;</code> للمحتوى الأساسي، والـ <code>&lt;footer&gt;</code> لقاع الصفحة (التذييل) حيث تكتب حقوق النشر.</p>
+                <div class="analogy">
+                    <strong>💡 تشبيه بسيط:</strong> مثل تقسيم غرف الشقة؛ (مطبخ، صالة، غرفة نوم). هذا التقسيم يساعد محرك البحث جوجل على قراءة وفهم أجزاء موقعك بدقة شديدة ومترابطة.
+                </div>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;header&gt; شعار الموقع هنا &lt;/header&gt;
+&lt;nav&gt; روابط الصفحة الرئيسية | اتصل بنا &lt;/nav&gt;
+&lt;main&gt; محتوى الموضوع الرئيسي للموقع &lt;/main&gt;
+&lt;footer&gt; جميع الحقوق محفوظة &copy; 2026 &lt;/footer&gt;</code></pre>
+            </div>
+
+            <div class="card">
+                <h3>وسم الروابط <code>&lt;a&gt;</code> والصور <code>&lt;img&gt;</code></h3>
+                <p>الرابط <code>&lt;a&gt;</code> ينقلك لموقع آخر عند الضغط عليه عبر خاصية <code>href</code>. أما وسم الصورة <code>&lt;img&gt;</code> فيعرض صورة في صفحتك عبر خاصية <code>src</code> (مسار الصورة)، وخاصية <code>alt</code> (نص بديل يظهر إذا انقطع الإنترنت).</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;!-- رابط ينقلك لجوجل --&gt;
+&lt;a href="https://www.google.com"&gt;اضغط لزيارة جوجل&lt;/a>
+
+&lt;!-- صورة --&gt;
+&lt;img src="my-photo.jpg" alt="صورة الطبيعة الخلابة"&gt;</code></pre>
+            </div>
+
+
+            <!-- الدرس الخامس -->
+            <h2 class="lesson-title">الدرس الخامس: التفاعل واستمارات البيانات (النماذج)</h2>
+
+            <div class="card">
+                <h3>النماذج وحقول الإدخال <code>&lt;form&gt;</code> & <code>&lt;input&gt;</code></h3>
+                <p>عندما تريد من المستخدم كتابة بياناته (مثل التسجيل في الفيسبوك)، نفتح استمارة <code>&lt;form&gt;</code>، وبداخلها نضع حقول إدخال <code>&lt;input&gt;</code>. السلوك يتغير حسب الـ <code>type</code>؛ فإما أن يكون حقلاً مخصصاً للبريد الإلكتروني، أو كلمة مرور مخفية بنقاط سوداء، أو اختيار تاريخ.</p>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;form&gt;
+    &lt;input type="email" placeholder="اكتب بريدك هنا"&gt;
+    &lt;input type="password" placeholder="كلمة المرور السرية"&gt;
+    &lt;input type="date"&gt; 
+    &lt;input type="checkbox"&gt; أنا لست روبوت
+&lt;/form&gt;</code></pre>
+            </div>
+
+
+            <!-- الدرس السادس -->
+            <h2 class="lesson-title">الدرس السادس: العلامات والبطاقات الشخصية للعناصر</h2>
+
+            <div class="card">
+                <h3>الخصائص العامة <code>id</code> و <code>class</code></h3>
+                <p>تُضاف هذه الخصائص داخل أي وسم لكي تعطيها اسماً مميزاً يسهل التعرف عليه لاحقاً عند استخدام لغات أخرى مثل CSS لتلوينها أو JavaScript لبرمجتها.</p>
+                <div class="analogy">
+                    <strong>💡 الفرق بينهما ببساطة:</strong><br>
+                    • الـ <code>id</code>: مثل رقم الهوية الشخصية؛ يجب أن يكون **فريداً لعنصر واحد فقط** ولا يتكرر في الصفحة أبداً.<br>
+                    • الـ <code>class</code>: مثل الزي المدرسي الموحد؛ يمكن إعطاؤه **لمجموعة عناصر متعددة** لكي تتشابه معاً في الصفات.
+                </div>
+                <span class="code-box-title">كيف يكتب في الكود (Syntax):</span>
+<pre><code>&lt;!-- عنصر يحمل هوية فريدة وخاصة به --&gt;
+&lt;p id="special-text"&gt;أنا نص فريد في الصفحة.&lt;/p>
+
+&lt;!-- عناصر متعددة تحمل نفس الكلاس المشترك --&gt;
+&lt;h2 class="red-title"&gt;العنوان الأول&lt;/h2&gt;
+&lt;h2 class="red-title"&gt;العنوان الثاني&lt;/h2&gt;</code></pre>
+            </div>
+
+        </main>
+
+        <!-- تذييل الصفحة -->
+        <footer>
+            <hr>
+            <p>تهانينا! بانتهاء قراءتك لهذه البطاقات، تكون قد قطعت الشوط الأساسي والأهم في فهم بنية صفحات الويب.</p>
+        </footer>
+
+    </div>
+
+ 
+
+
+    <!-- كود JavaScript لتفعيل البحث الفوري -->
+<script>
+    // 1. ربط عناصر الصفحة بالكود (مربع البحث وجميع البطاقات التعليمية)
+    const searchInput = document.getElementById('search-input');
+    const cards = document.querySelectorAll('.card');
+
+    // 2. الاستماع لعملية الكتابة لحظة بلحظة (Input Event)
+    searchInput.addEventListener('input', function() {
+        // تحويل النص المكتوب إلى أحرف صغيرة لتجنب أي مشاكل في البحث
+        const searchText = searchInput.value.toLowerCase(); 
+
+        // 3. المرور على كل بطاقة وفحص محتواها النصي
+        cards.forEach(card => {
+            const cardContent = card.textContent.toLowerCase();
+
+            // إذا كانت الكلمة المكتوبة موجودة داخل نص البطاقة، اظهرها، وإلا اخفها فوراً
+            if (cardContent.includes(searchText)) {
+                card.style.display = "block"; // إظهار البطاقة المتطابقة
+            } else {
+                card.style.display = "none";  // إخفاء البطاقة غير المتطابقة
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>>مسار تعلم JavaScript - من الصفرإلى الاحتراف </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body id="js-page">
+
+     <!-- الهيدر الرئيسي -->
+    <header>
+        <h1>المكتبة الشاملة لتعلم جافاسكريبت (JavaScript)</h1>
+        <p>مجموعة من الدروس الأساسية والمتوسطة مع أمثلة برمجية توضيحية لكل مفهوم.</p>
+    </header>
+
+     <nav class="navbar">
+        <a href="index home.html" class="nav-btn">HOME</a>
+        <a href="index html.html" class="nav-btn">HTML</a>
+        <a href="index css.html"class="nav-btn">css</a>
+       <a href="index js.html" class="nav-btn" style="color: var(--js-color); border-color: var(--js-color);">JavaScript</a>
+ </nav>
+
+     <!-- مربع البحث الذكي -->
+<div class="search-box">
+    <input type="text" id="search-input" placeholder="🔍 ابحث عن درس أو وسم معين...">
+</div>
+
+
+
+   <!-- وسم <main>: الحاوية الرئيسية للمحتوى الأساسي والفريد في الصفحة -->
+    <main>
+
+        <!-- بطاقة التعريف العامة -->
+        <div class="card">
+           <h2> ماهي JS  وماهي وظيفتها ؟</h2>
+            <p>هي اختصار لـ <strong>  JavaScript </strong>. هي لغه برمجه عالية المستوى تستخدم بشكل اساسي لجعل صفحات الويب تفاعليه وحيوية .</p>
+            <div class="analogy">
+              <p>  <strong>💡 تشبيه بسيط:</strong> اذاكانت HTML هي الهيكل الذي يحدد البنيه و CSS هي التنسيق التي تمنح الجمال والتناسق فان JavaScript هي التي تعطي الموقع القدرة على الحركه والتفاعل </p>
+              
+            </div>
+    
+        </div>
+
+        <!-- ==================== الدروس ==================== -->
+        <!-- وسم <article>: عنصر دلالي يُستخدم لتمثيل جزء مستقل بذاته (مثل بطاقة أو مقال أو درس) -->
+        <!-- class="card": كلاس تم إعداده لتنسيق البطاقات بسهولة لاحقاً باستخدام CSS -->
+
+        <!-- الدرس 1 -->
+        <article class="card">
+            <!-- <h2>: عنوان فرعي من المستوى الثاني ويمثل عنوان الدرس -->
+            <h2>1. المتغيرات (Variables)</h2>
+            <p>تُستخدم المتغيرات لتخزين البيانات في ذاكرة البرنامج. في جافاسكريبت الحديثة نستخدم <code>let</code> للمتغيرات القابلة للتغيير و <code>const</code> للقيم الثابتة.</p>
+            
+            <h3>مثال عملي:</h3>
+            <!-- <pre>: يُحافظ على تنسيق الأسطر والمسافات الكود كما كُتبت تماماً -->
+            <!-- <code>: يوضح للمتصفح ومحركات البحث أن هذا النص هو كود برمجي -->
+            <pre><code>let score = 100;
+const pi = 3.14;
+
+score = 150; // يمكن تغيير قيمته
+// pi = 3.15; -> هذا سيعطي خطأ لأن const لا يمكن إعادة تعيينه
+
+console.log("النتيجة:", score);</code></pre>
+        </article>
+
+        <!-- الدرس 2 -->
+        <article class="card">
+            <h2>2. أنواع البيانات (Data Types)</h2>
+            <p>تتعامل جافاسكريبت مع عدة أنواع من البيانات الأساسية مثل النصوص (String)، الأرقام (Number)، والقيم المنطقية (Boolean).</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>let text = "مرحباً بك"; // String
+let count = 10;          // Number
+let isReady = true;     // Boolean
+let emptyVal = null;    // Null (قيمة فارغة)
+
+console.log(typeof text); // يطبع: string</code></pre>
+        </article>
+
+        <!-- الدرس 3 -->
+        <article class="card">
+            <h2>3. الشروط (Conditional Statements)</h2>
+            <p>تُستخدم لاتخاذ القرارات في الكود بناءً على تحقق شرط معين باستخدام <code>if</code> و <code>else</code>.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>let age = 18;
+
+if (age >= 18) {
+    console.log("يسمح لك بالدخول");
+} else {
+    console.log("عذراً، هذا المحتوى للبالغين فقط");
+}</code></pre>
+        </article>
+
+        <!-- الدرس 4 -->
+        <article class="card">
+            <h2>4. الدوال (Functions)</h2>
+            <p>الدالة عبارة عن كتلة من الكود تُنفذ مهمة محددة عند استدعائها، وتساعد في تجنب تكرار الكود.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>// دالة تقليدية
+function addNumbers(a, b) {
+    return a + b;
+}
+
+// Arrow Function (دالة السهم الحديثة)
+const multiply = (a, b) => a * b;
+
+console.log(addNumbers(5, 3)); // 8
+console.log(multiply(4, 2));   // 8</code></pre>
+        </article>
+
+        <!-- الدرس 5 -->
+        <article class="card">
+            <h2>5. المصفوفات (Arrays)</h2>
+            <p>تُستخدم المصفوفة لتخزين قائمة من العناصر تحت اسم متغير واحد.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>let fruits = ["تفاح", "موز", "برتقال"];
+
+// إضافة عنصر جديد
+fruits.push("مانجو");
+
+// طباعة العنصر الأول (الفهرس يبدأ من 0)
+console.log(fruits[0]); // تفاح
+console.log("عدد الفواكه:", fruits.length);</code></pre>
+        </article>
+
+        <!-- الدرس 6 -->
+        <article class="card">
+            <h2>6. الكائنات (Objects)</h2>
+            <p>تُستخدم الكائنات لتخزين البيانات على شكل أزواج من (المفتاح والقيمة - Key & Value).</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>let car = {
+    brand: "Toyota",
+    model: "Camry",
+    year: 2022,
+    start: function() {
+        console.log("المحرك يعمل...");
+    }
+};
+
+console.log(car.brand); // Toyota
+car.start(); // المحرك يعمل...</code></pre>
+        </article>
+
+        <!-- الدرس 7 -->
+        <article class="card">
+            <h2>7. الحلقات التكرارية (Loops)</h2>
+            <p>تُستخدم الحلقات التكرارية لتكرار تنفيذ كود معين لعدد محدد من المرات.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>// حلقة for البسيطة
+for (let i = 1; i <= 3; i++) {
+    console.log("التكرار رقم: " + i);
+}
+
+// التكرار على مصفوفة
+let colors = ["أحمر", "أخضر", "أزرق"];
+colors.forEach(function(color) {
+    console.log("اللون:", color);
+});</code></pre>
+        </article>
+
+        <!-- الدرس 8 -->
+        <article class="card">
+            <h2>8. التحكم بعناصر الصفحة (DOM Manipulation)</h2>
+            <p>يتيح لك الـ DOM الوصول إلى عناصر الـ HTML وتعديل نصوصها أو أنماطها برمجياً.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>// تحديد عنصر وتغيير نصه
+let titleElement = document.getElementById("main-title");
+titleElement.innerText = "العنوان الجديد!";
+
+// تغيير لون العنصر
+titleElement.style.color = "blue";</code></pre>
+        </article>
+
+        <!-- الدرس 9 -->
+        <article class="card">
+            <h2>9. الأحداث (Events)</h2>
+            <p>تتيح الأحداث للكود الاستجابة لتفاعلات المستخدم مثل الضغط على زر أو الكتابة في الحقول.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>let myButton = document.querySelector("button");
+
+myButton.addEventListener("click", function() {
+    alert("تم الضغط على الزر بنجاح!");
+});</code></pre>
+        </article>
+
+        <!-- الدرس 10 -->
+        <article class="card">
+            <h2>10. التخزين المحلي (LocalStorage)</h2>
+            <p>يسمح لك بتخزين بيانات بسيطة داخل متصفح المستخدم لتبقى محفوظة حتى بعد إغلاق الصفحة.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>// حفظ قيمة في المتصفح
+localStorage.setItem("theme", "dark");
+
+// استرجاع القيمة
+let currentTheme = localStorage.getItem("theme");
+console.log("المظهر الحالي:", currentTheme);</code></pre>
+        </article>
+
+        <!-- الدرس 11 -->
+        <article class="card">
+            <h2>11. البرمجة غير المتزامنة (Async / Await & Fetch)</h2>
+            <p>تُستخدم لجلب البيانات من خوادم خارجية (APIs) دون إيقاف تشغيل الصفحة أثناء الانتظار.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>async function fetchData() {
+    try {
+        let response = await fetch("https://api.example.com/data");
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log("حدث خطأ أثناء جلب البيانات:", error);
+    }
+}</code></pre>
+        </article>
+
+        <!-- الدرس 12 (جديد): النصوص المتقدمة Template Literals -->
+        <article class="card">
+            <h2>12. النصوص المتقدمة (Template Literals)</h2>
+            <p>طريقة حديثة لدمج المتغيرات داخل النصوص بسهولة باستخدام العلامة المائلة (Backticks `) دون الحاجة لعلامات <code>+</code>.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>let name = "علي";
+let age = 22;
+
+// استخدام Backticks والمرمز ${}
+let message = `مرحباً، اسمي ${name} وعمري ${age} سنة.`;
+
+console.log(message);</code></pre>
+        </article>
+
+        <!-- الدرس 13 (جديد): الرياضيات في جافاسكريبت Math Object -->
+        <article class="card">
+            <h2>13. كائن الرياضيات (Math Object)</h2>
+            <p>يوفر كائن <code>Math</code> الجاهز في اللغة مجموعة من الدوال للعمليات الرياضية مثل التقريب والأرقام العشوائية.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>// تقريب الأرقام
+console.log(Math.round(4.7)); // 5
+
+// توليد رقم عشوائي بين 0 و 10
+let randomNum = Math.floor(Math.random() * 10) + 1;
+console.log("رقم عشوائي:", randomNum);</code></pre>
+        </article>
+
+        <!-- الدرس 14 (جديد): التعامل مع التواريخ Date Object -->
+        <article class="card">
+            <h2>14. التعامل مع التواريخ (Date Object)</h2>
+            <p>يُستخدم الكائن <code>Date</code> للتعامل مع الوقت والتاريخ الحالي واستخراج السنة، الشهر، أو اليوم.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>let now = new Date();
+
+console.log("التاريخ الكامل:", now);
+console.log("السنة الحالية:", now.getFullYear());
+console.log("الشهر (0-11):", now.getMonth());</code></pre>
+        </article>
+
+        <!-- الدرس 15 (جديد): دوال التحويل والمعالجة للمصفوفات Map & Filter -->
+        <article class="card">
+            <h2>15. معالجة المصفوفات (Map & Filter)</h2>
+            <p>دوال حديثة تُستخدم لتصفية العناصر أو تعديل بيانات المصفوفة وإنشاء مصفوفة جديدة بدون التعديل على الأصلية.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>let numbers = [1, 2, 3, 4, 5, 6];
+
+// filter: تصفية الأرقام الزوجية فقط
+let evenNumbers = numbers.filter(n => n % 2 === 0); // [2, 4, 6]
+
+// map: مضاعفة كل رقم في المصفوفة
+let doubled = numbers.map(n => n * 2); // [2, 4, 6, 8, 10, 12]</code></pre>
+        </article>
+
+        <!-- الدرس 16 (جديد): إدارة الأخطاء Try / Catch -->
+        <article class="card">
+            <h2>16. معالجة الأخطاء (Try / Catch)</h2>
+            <p>تُستخدم لمنع توقف البرنامج تماماً عند حدوث خطأ غير متوقع أثناء تشغيل الكود.</p>
+            <h3>مثال عملي:</h3>
+            <pre><code>try {
+    // محاولة تنفيذ كود قد يحتوي على خطأ
+    let result = undefinedFunction(); 
+} catch (error) {
+    // الكود الذي يعمل في حال حدوث خطأ
+    console.log("حدث خطأ في البرنامج ولكن تم التعامل معه!");
+    console.log("رسالة الخطأ:", error.message);
+}</code></pre>
+        </article>
+
+    </main>
+
+    <!-- وسم <footer>: الجزء السفلي للصفحة (التذييل)، يُستخدم لحقوق النشر أو الروابط الفرعية -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - موقع تعلم جافاسكريبت</p>
+    </footer>
+
+
+
+<!-- كود JavaScript لتفعيل البحث الفوري -->
+<script>
+    // 1. ربط عناصر الصفحة بالكود (مربع البحث وجميع البطاقات التعليمية)
+    const searchInput = document.getElementById('search-input');
+    const cards = document.querySelectorAll('.card');
+
+    // 2. الاستماع لعملية الكتابة لحظة بلحظة (Input Event)
+    searchInput.addEventListener('input', function() {
+        // تحويل النص المكتوب إلى أحرف صغيرة لتجنب أي مشاكل في البحث
+        const searchText = searchInput.value.toLowerCase(); 
+
+        // 3. المرور على كل بطاقة وفحص محتواها النصي
+        cards.forEach(card => {
+            const cardContent = card.textContent.toLowerCase();
+
+            // إذا كانت الكلمة المكتوبة موجودة داخل نص البطاقة، اظهرها، وإلا اخفها فوراً
+            if (cardContent.includes(searchText)) {
+                card.style.display = "block"; // إظهار البطاقة المتطابقة
+            } else {
+                card.style.display = "none";  // إخفاء البطاقة غير المتطابقة
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
